@@ -12,6 +12,7 @@
                 alert("Check information carefully! \nDon't share personal information to anyone!");
 
                 // membuat data person
+               // membuat data person
                 var person = {
                     firstName: "John",
                     lastName: "Doe",
@@ -20,20 +21,16 @@
                     number: +823456789,
                     email: "forbetterlifeamen@gmail.com",
                     fullName: function() {
-                        return "Name is" + this.firstName + ' ' + this.lastName;
+                        return this.firstName + ' ' + this.lastName;
                     }
-    
                     };
 
               // memanggil data person
-              document.write("You are" + " " + person.firstName + ' ' + person.lastName +"</p>");
+              document.write("You are" + " " + person.fullName() +"</p>");
               document.write("You life in" + ' ' + person.address +"</p>");
-              document.write("Your number and email is " + ' ' + person.number +
-               ' ' + "and" + ' ' + person.email +"</p>");
-              
-
-                
-        
+              document.write("Your number is " + ' ' + person.number +"</p>");
+              document.write("Your email is " + ' ' + person.email +"</p>");
+            
      </script>
   </body>
 </html>
